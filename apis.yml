@@ -1,8 +1,29 @@
 aid: blinkist
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blinkist.png
 name: Blinkist
-description: 'Blinkist is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: education. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Blinkist is a Berlin-founded subscription learning app that condenses the key
+  ideas of thousands of nonfiction books and podcasts into roughly 15-minute
+  text and audio summaries called "Blinks." Launched in 2012, it is used by
+  millions of readers to learn on the go across categories such as productivity,
+  business, psychology, personal growth, and science, and it also offers
+  Blinkist for Business for teams and organizations. The consumer product is
+  delivered through the web and iOS/Android apps backed by a private mobile
+  backend at api.blinkist.com; Blinkist does not publish a public developer API,
+  SDKs, or a developer portal. Blinkist was added to the API Evangelist network
+  as a portfolio-company lead (backed by Insight Partners) and enriched with the
+  provider signals that could be verified from its public surface.
 url: https://raw.githubusercontent.com/api-evangelist/blinkist/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Education
+- Learning
+- Books
+- Audiobooks
+- Microlearning
+- Productivity
+- Subscription
+- EdTech
+- Mobile App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/blinkist-domain-security.yml
 - type: Website
   url: https://www.blinkist.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
